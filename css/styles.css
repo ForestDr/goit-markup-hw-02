@@ -6,6 +6,7 @@
 /* вторинний колір тексту color: #212121; */
 /* колір герою color: #FFFFFF; */
 /* колір контактиів адреси color: rgba(255, 255, 255, 0.6); */
+/* background-color: #2F303A; */
 
 :root {
     --primary-color: #757575;
@@ -14,6 +15,8 @@
     --secondary-accent-color: #FFFFFF;
     --logo-color: #000000;
     --adress-color: rgba(255, 255, 255, 0.6);
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #2F303A;
 }
 
 body {
@@ -22,6 +25,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-color);
+
+    background-color: var(--primary-bg-color);
 }
 
 .list {
@@ -49,7 +54,6 @@ body {
 .site-nav .link,
 .contacts-list .contact {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -70,3 +74,41 @@ body {
     color: var(--accent-color);
 }
 
+/* Секція героя */
+
+.hero {
+    background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-accent-color);
+}
+
+.hero > .btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--secondary-accent-color);
+
+    background-color: var(--accent-color);
+}
+
+.hero > .btn:hover {
+    cursor: pointer;
+}
+
+/* Секція наші особливості */
+
+.feature-list .title{
+    /* возможно удалю */
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
