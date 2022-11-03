@@ -1,1 +1,72 @@
 /* Шрифти 'Raleway' 700, 'Roboto' 400 500 700 900 */
+
+/* акцент color: #2196F3; */
+/* лого #000000; */
+/* головний колір color: #757575; */
+/* вторинний колір тексту color: #212121; */
+/* колір герою color: #FFFFFF; */
+/* колір контактиів адреси color: rgba(255, 255, 255, 0.6); */
+
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    --secondary-accent-color: #FFFFFF;
+    --logo-color: #000000;
+    --adress-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Логотип */
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.logo > span {
+    color: var(--accent-color);
+}
+
+/* Навігація і контакти */
+
+.site-nav .link,
+.contacts-list .contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link {
+    color: var(--secondary-color);
+}
+
+.contacts-list .contact {
+    color: var(--primary-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-list .contact:hover,
+.contacts-list .contact:focus {
+    color: var(--accent-color);
+}
+
