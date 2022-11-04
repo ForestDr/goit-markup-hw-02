@@ -199,6 +199,10 @@ body {
     background-color: var(--accent-color);
 }
 
+.filter .btn:hover {
+    cursor: pointer;
+}
+
 /* Список проектів */
 
 .projects-list .title {
