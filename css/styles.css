@@ -7,6 +7,7 @@
 /* колір герою color: #FFFFFF; */
 /* колір контактиів адреси color: rgba(255, 255, 255, 0.6); */
 /* background-color: #2F303A; */
+/* background: #F5F4FA; */
 
 :root {
     --primary-color: #212121;
@@ -17,6 +18,7 @@
     --adress-color: rgba(255, 255, 255, 0.6);
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
+    --primary-btn-color: #F5F4FA;
 }
 
 body {
@@ -66,7 +68,7 @@ body {
 }
 
 .site-nav .link {
-    color: inherit;
+    color: var(--primary-color);
 }
 
 .contacts-list .contact {
@@ -96,6 +98,7 @@ body {
 }
 
 .hero > .btn {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -132,15 +135,18 @@ body {
 
 /* Команда */
 
-.team-list .title {
-    font-weight: 500;
+.team-list .title,
+.team-list .descr {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
 
+.team-list .title {
+    font-weight: 500;
+}
+
 .team-list .descr {
-    text-align: center;
     color: var(--secondary-color);
 }
 
@@ -164,6 +170,41 @@ body {
     color: var(--adress-color);
 }
 
-.addresses-list .contact:hover {
+.addresses-list .contact:hover,
+.addresses-list .contact:focus {
     color: var(--accent-color);
+}
+
+/* Портфоліо */
+
+.filter .btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+
+    background-color: var(--primary-btn-color);
+}
+
+.filter .btn:hover,
+.filter .btn:focus {
+    color: var(--secondary-accent-color);
+
+    background-color: var(--accent-color);
+}
+
+/* Список проектів */
+
+.projects-list .title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-list .descr {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-color);
 }
