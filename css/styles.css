@@ -21,6 +21,7 @@
 
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
+    --team-bg-color: #F5F4FA;
     --primary-btn-color: #F5F4FA;
 }
 
@@ -138,6 +139,10 @@ body {
 }
 
 /* Команда */
+
+.team-section {
+    background-color: var(--team-bg-color); 
+}
 
 .team-list .title,
 .team-list .descr {
