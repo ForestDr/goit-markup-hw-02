@@ -37,7 +37,6 @@ body {
 
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -64,7 +63,7 @@ body {
 }
 
 .contacts-list .contact {
-    color: var(--primary-color);
+    color: inherit;
 }
 
 .site-nav .link:hover,
@@ -103,12 +102,35 @@ body {
     cursor: pointer;
 }
 
+
+/* Секція  */
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
 /* Секція наші особливості */
 
-.feature-list .title{
-    /* возможно удалю */
+.feature-list .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-color);
+}
+
+/* Секція команди */
+
+.team-list .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.team-list .descr {
+    text-align: center;
 }
