@@ -9,8 +9,8 @@
 /* background-color: #2F303A; */
 
 :root {
-    --primary-color: #757575;
-    --secondary-color: #212121;
+    --primary-color: #212121;
+    --secondary-color: #757575;
     --accent-color: #2196F3;
     --secondary-accent-color: #FFFFFF;
     --logo-color: #000000;
@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -36,12 +36,19 @@ body {
 /* Логотип */
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+}
+
+.logo-nav {
     color: var(--logo-color);
+}
+
+.footer-logo {
+    color: var(--secondary-accent-color);
 }
 
 .logo > span {
@@ -59,11 +66,11 @@ body {
 }
 
 .site-nav .link {
-    color: var(--secondary-color);
+    color: inherit;
 }
 
 .contacts-list .contact {
-    color: inherit;
+    color: var(--secondary-color);
 }
 
 .site-nav .link:hover,
@@ -109,28 +116,54 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: var(--secondary-color);
 }
 
-/* Секція наші особливості */
+/* Наші особливості */
 
 .feature-list .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+.feature-list .descr {
     color: var(--secondary-color);
 }
 
-/* Секція команди */
+/* Команда */
 
 .team-list .title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--secondary-color);
 }
 
 .team-list .descr {
     text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Адреса  */
+
+.addresses-list .address {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--secondary-accent-color);
+}
+
+.addresses-list .contact {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--adress-color);
+}
+
+.addresses-list .contact:hover {
+    color: var(--accent-color);
 }
