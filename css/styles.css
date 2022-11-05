@@ -31,7 +31,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--primary-color);
 
     background-color: var(--primary-bg-color);
@@ -41,6 +40,10 @@ body {
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 /* Логотип */
 
 .logo {
@@ -48,7 +51,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
+    letter-spacing: 0.03em;
 }
 
 .logo-nav {
@@ -70,7 +73,6 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .site-nav-link {
@@ -129,6 +131,7 @@ body {
 .section-title {
     font-size: 36px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -137,10 +140,12 @@ body {
 .feature-list .title {
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .feature-list .descr {
+    letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
 
@@ -150,15 +155,16 @@ body {
     background-color: var(--team-bg-color); 
 }
 
+.team-list .container {
+    background-color: var(--primary-bg-color);
+}
+
 .team-list .title,
 .team-list .descr {
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     text-align: center;
-}
-
-.team-list .container {
-    background-color: var(--primary-bg-color);
 }
 
 .team-list .title {
@@ -179,13 +185,13 @@ body {
 
 .addresses-list .address {
     font-style: normal;
-    text-decoration: none;
+    letter-spacing: 0.03em;
     color: var(--secondary-accent-color);
 }
 
 .addresses-list .contact {
     font-style: normal;
-    text-decoration: none;
+    letter-spacing: 0.03em;
     color: var(--adress-contact-color);
 }
 
@@ -196,7 +202,7 @@ body {
 
 /* Портфоліо */
 
-.filter .btn {
+.filter-btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -207,22 +213,18 @@ body {
     background-color: var(--primary-btn-color);
 }
 
-.filter .btn:hover,
-.filter .btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
     color: var(--secondary-accent-color);
 
     background-color: var(--accent-color);
 }
 
-.filter .btn:hover {
+.filter-btn:hover {
     cursor: pointer;
 }
 
 /* Список проектів */
-
-.projects-list .link {
-    text-decoration: none;
-}
 
 .projects-list .title {
     font-size: 18px;
@@ -234,5 +236,6 @@ body {
 .projects-list .descr {
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
