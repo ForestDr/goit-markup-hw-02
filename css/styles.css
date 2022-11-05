@@ -6,8 +6,9 @@
 /* вторинний колір тексту color: #212121; */
 /* колір герою color: #FFFFFF; */
 /* колір контактиів адреси color: rgba(255, 255, 255, 0.6); */
-/* background-color: #2F303A; */
-/* background: #F5F4FA; */
+/* вторинний колір фону background-color: #2F303A; */
+/* головний колір кнопок портф. background: #F5F4FA; */
+/* активна кнопка героя background: #188CE8; */
 
 :root {
     --primary-color: #212121;
@@ -17,12 +18,13 @@
     --secondary-accent-color: #FFFFFF;
 
     --logo-color: #000000;
-    --adress-color: rgba(255, 255, 255, 0.6);
+    --adress-contact-color: rgba(255, 255, 255, 0.6);
 
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
     --team-bg-color: #F5F4FA;
     --primary-btn-color: #F5F4FA;
+    --accent-hero-btn-bg-color: #188CE8;
 }
 
 body {
@@ -63,7 +65,7 @@ body {
 
 /* Навігація і контакти */
 
-.site-nav .link,
+.site-nav-link,
 .contacts-list .contact {
     font-weight: 500;
     line-height: 1.14;
@@ -71,7 +73,7 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link {
+.site-nav-link {
     color: var(--primary-color);
 }
 
@@ -79,13 +81,16 @@ body {
     color: var(--secondary-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
+.site-nav-link:hover,
+.site-nav-link:focus,
 .contacts-list .contact:hover,
 .contacts-list .contact:focus {
     color: var(--accent-color);
 }
 
+.current {
+    color: var(--accent-color);
+}
 /* Секція героя */
 
 .hero {
@@ -102,7 +107,7 @@ body {
     color: var(--secondary-accent-color);
 }
 
-.hero > .btn {
+.hero-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -113,7 +118,8 @@ body {
     background-color: var(--accent-color);
 }
 
-.hero > .btn:hover {
+.hero-btn:hover {
+    background-color: var(--accent-hero-btn-bg-color);
     cursor: pointer;
 }
 
@@ -151,6 +157,10 @@ body {
     text-align: center;
 }
 
+.team-list .container {
+    background-color: var(--primary-bg-color);
+}
+
 .team-list .title {
     font-weight: 500;
 }
@@ -176,7 +186,7 @@ body {
 .addresses-list .contact {
     font-style: normal;
     text-decoration: none;
-    color: var(--adress-color);
+    color: var(--adress-contact-color);
 }
 
 .addresses-list .contact:hover,
