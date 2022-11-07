@@ -14,17 +14,17 @@
     --primary-color: #212121;
     --secondary-color: #757575;
 
-    --accent-color: #2196F3;
-    --secondary-accent-color: #FFFFFF;
+    --accent-color: #2196f3;
+    --secondary-accent-color: #ffffff;
 
     --logo-color: #000000;
     --adress-contact-color: rgba(255, 255, 255, 0.6);
 
-    --primary-bg-color: #FFFFFF;
-    --secondary-bg-color: #2F303A;
-    --team-bg-color: #F5F4FA;
-    --primary-btn-color: #F5F4FA;
-    --accent-hero-btn-bg-color: #188CE8;
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #2f303a;
+    --team-bg-color: #f5f4fa;
+    --primary-btn-color: #f5f4fa;
+    --accent-hero-btn-bg-color: #188ce8;
 }
 
 body {
