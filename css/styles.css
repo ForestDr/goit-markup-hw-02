@@ -155,7 +155,7 @@ body {
     background-color: var(--team-bg-color); 
 }
 
-.team-list .container {
+.team-list-container {
     background-color: var(--primary-bg-color);
 }
 
@@ -177,7 +177,7 @@ body {
 
 /* Футер */
 
-.footer {
+.page-footer {
     background-color: var(--secondary-bg-color);
 }
 
